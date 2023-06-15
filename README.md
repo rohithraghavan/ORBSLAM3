@@ -37,6 +37,17 @@ tar -xvzf 4.5.0.tar.gz
 rm 4.5.0.tar.gz
 cd opencv-4.5.0
 ```
+Now, We edit the file cap_ffmpeg_impl.hpp
+```
+gedit ./modules/videoio/src/cap_ffmpeg_impl.hpp
+```
+Add the following on top of the header in the file
+
+#define AV_CODEC_FLAG_GLOBAL_HEADER (1 << 22)
+#define CODEC_FLAG_GLOBAL_HEADER AV_CODEC_FLAG_GLOBAL_HEADER
+#define AVFMT_RAWPICTURE 0x0020
+
+then save and close the file
 
 
 
