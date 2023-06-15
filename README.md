@@ -18,5 +18,25 @@ sudo apt-get install libglew-dev libboost-all-dev libssl-dev
 
 sudo apt install libeigen3-dev
 ```
+# Installation of OpenCV 4.4.0
+First, make sure you have the latest software installed:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+Installing the Dependencies
+```
+sudo apt-get install build-essential cmake python3-numpy python3-dev python3-tk libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavresample-dev libdc1394-dev libeigen3-dev libgtk-3-dev libvtk7-qt-dev
+```
+Now, we install OpenCV
+```
+cd ~
+mkdir Dev && cd Dev
+wget https://github.com/opencv/opencv/archive/4.5.0.tar.gz
+tar -xvzf 4.5.0.tar.gz
+rm 4.5.0.tar.gz
+cd opencv-4.5.0
+```
+
 
 
